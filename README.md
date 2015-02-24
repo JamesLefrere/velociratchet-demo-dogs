@@ -2,6 +2,8 @@
 
 Demonstrating possible development of the meteor velociratchet package
 
+Demo: http://velociratchet-dogs.meteor.com/
+
 Have a look at https://github.com/JamesLefrere/velociratchet-meteor-package (forked from https://github.com/zendylabs/velociratchet-demo)
 
 The idea of this little demo is to keep a lot of the complexity inside the layout template and set some of the basic attributes of the pages in the router/controllers/routes. 
