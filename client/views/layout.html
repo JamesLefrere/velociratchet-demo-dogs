@@ -1,0 +1,33 @@
+<template name="layout">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{{#momentum plugin="iron-router" options=transition}}
+		{{#with route}}
+		{{#if nav}}
+		<header class="bar bar-nav">
+			{{#if canGoBack}}<a href="{{pathFor getPreviousPage}}" class="icon icon-left-nav pull-left"></a>{{/if}}
+			{{#if title}}<h1 class="title">{{title}}</h1>{{/if}}
+			{{#if navRight}}
+			{{#with navRight}}
+				<a href="{{pathFor this.route}}" class="icon {{#if this.icon}}icon-{{this.icon}}{{else}}icon-right-nav{{/if}} pull-right">{{this.label}}</a>
+			{{/with}}
+			{{/if}}
+		</header>
+		{{/if}}
+		{{/with}}
+		{{> yield}}
+		{{#with route}}
+		{{#if tabs}}
+		<nav class="bar bar-tab">
+			{{#each tabs}}
+			<a class="tab-item {{isActive menu='home' active=getCurrentRoute}}" href="{{pathFor this.route}}">
+				{{#if this.icon}}<span class="icon icon-{{this.icon}}"></span>{{/if}}
+				{{#if this.label}}<span class="tab-label">{{this.label}}</span>{{/if}}
+			</a>
+			{{/each}}
+		</nav>
+		{{/if}}
+		{{/with}}
+	{{> yield "popover"}}
+	{{> yield "modal"}}
+	{{/momentum}}
+</template>

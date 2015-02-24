@@ -31,9 +31,11 @@ iron:location@1.0.7
 iron:middleware-stack@1.0.7
 iron:router@1.0.7
 iron:url@1.0.7
+jameslefrere:autoform-ratchet@0.1.0
 jquery@1.11.3
 json@1.0.2
 launch-screen@1.0.1
+less@1.0.12
 livedata@1.0.12
 logging@1.0.6
 meteor@1.1.4
@@ -45,6 +47,9 @@ momentjs:moment@2.8.4
 mongo@1.0.11
 observe-sequence@1.0.4
 ordered-dict@1.0.2
+percolate:momentum@0.7.2
+percolate:momentum-iron-router@0.7.0
+percolate:velocityjs@1.1.0
 random@1.0.2
 reactive-dict@1.0.5
 reactive-var@1.0.4
@@ -61,3 +66,4 @@ underscore@1.0.2
 url@1.0.3
 webapp@1.1.6
 webapp-hashing@1.0.2
+zendy:velociratchet@2.0.1
